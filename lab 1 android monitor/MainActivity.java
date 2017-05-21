@@ -38,8 +38,7 @@ public class MainActivity extends AppCompatActivity {
         MicrogearCallBack callback = new MicrogearCallBack();
         microgear.setCallback(callback);
         microgear.connect(appid, key, secret, alias);
-        //microgear.subscribe("/dht"); //uncomment when work with piedht
-        microgear.subscribe("/pielinksensor/data"); //comment when work with freeboard
+        microgear.subscribe("/dht"); //uncomment when work with piedht
     }
 
     protected void onDestroy() {
